@@ -24,7 +24,7 @@ density <- 1  # 1 individual/hectare = 100 individuals total
 duration <- 5  # survey duration label (events fixed at t = 0 with initial_location)
 tbr <- c(5)
 rbr <- seq(0.5, 4, by = 0.5)           # distance bins (bSims rint units)
-dist_breaks <- c(0, rbr)             # Ken-style breaks with unitsIn = "km"
+dist_breaks <- c(0, rbr)             # distance breaks with unitsIn = "km"
 
 half_normal_fun <- function(d, tau) exp(-d^2 / (2 * tau^2))
 exponential_fun <- function(d, tau) exp(-d / tau)
